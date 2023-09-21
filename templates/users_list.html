@@ -12,7 +12,7 @@
     </tr>
     {% for item in entities %}
     <tr>
-        <td>{{ item.login }}</td>
+        <td><a href="/users/{{ item.login }}">{{ item.login }}</a></td>
         <td>{{ item.last_name }}</td>
         <td>{{ item.name }}</td>
         <td>{{ item.surname }}</td>
