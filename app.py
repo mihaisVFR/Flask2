@@ -51,7 +51,7 @@ def user_names():
         entities.append(*name)
     if names is None:
         return abort(404)
-    return render_template("names.html",   entities=entities)    # return "<br>".join(entities)
+    return render_template("names.html",   entities=entities)
 
 
 @app.route("/")
