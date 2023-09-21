@@ -2,7 +2,7 @@ from app import UserModel, db
 
 
 def add_users():
-    with open("./users.txt", "r", encoding="utf-8") as f:
+    with open("users.txt", "r", encoding="utf-8") as f:
         for row_line in f:
             data = row_line.strip().split(";")
             user = UserModel(*data)
